@@ -1,0 +1,26 @@
+header {
+  position: absolute;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  z-index: 50;
+
+  .logo {
+    display: inline-block;
+    // padding: 20px 10px;
+    //background-image: url(https://static1.squarespace.com/static/5869a8436b8f5b18108998c1/t/586fc9f3cd0f68f2473502f9/1510611294073/?format=1500w);
+  }
+
+  nav {
+    display: inline-block;
+    float: right;
+    text-align: right;
+
+    a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+  }
+}

@@ -1,21 +1,24 @@
 export const actions = {
-  up,
-  intro,
-  showMenu
+  reviewLeftClicked,
+  reviewRightClicked,
 }
 
-function up (state, actions) {
+function reviewLeftClicked (state, actions) {
   return (
-    {count: state.count + 1}
+    {
+      reviewStatus: {
+        currentReview: state.reviewStatus.currentReview - 1
+      }
+    }
   )
 }
 
-function showMenu(){
-}
-
-function intro(state, actions){
-  console.log('Just ran my first action' )
+function reviewRightClicked (state, actions) {
   return (
-    {count: state.count + 1}
+    {
+      reviewStatus: {
+        currentReview: state.reviewStatus.currentReview + 1
+      }
+    }
   )
 }
